@@ -1,0 +1,33 @@
+.page {
+    width: 80vw;
+    margin: auto;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 32px;
+    border: none;
+
+    background-color: #008CBA;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.id {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.id:focus {
+    border: 2px solid #555;
+}

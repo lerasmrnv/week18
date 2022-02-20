@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация в HTML5</title>
+</head>
+
+<body>
+    <h1>Страница/опросник для владельцев кошек</h1>
+
+    <form action="#">
+        <p>
+            <label for="namecat">Кличка питомца</label>
+            <input type="text" id="namecat" required>
+        </p>
+        <p>
+            <label for="name">Имя владельца</label>
+            <input type="text" id="name" required>
+        </p>
+        <p>
+            <label for="age-cat">Возраст кошки</label>
+            <input type="number" id="age-cat" max="28" min="0">
+        </p>
+        <p>
+            <label for="phone-number">Телефон для связи</label>
+            <input type="tel" id="phone-number"
+                pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/">
+        </p>
+        <p>
+            <select size="5">
+                <option selected="selected" disabled>Выберите породу питомца</option>
+                <option value="Персидская кошка">Персидская кошка</option>
+                <option value="Бенгальская кошка">Бенгальская кошка</option>
+                <option value="Мейн-кун">Мейн-кун</option>
+                <option value="Британская кошка">Британская кошка</option>
+                <option value="Сиамская кошка">Сиамская кошка</option>
+                <option value="Сфинкс">Сфинкс</option>
+                <option value="Другое">Другое</option>
+            </select>
+        </p>
+        <p>
+            Чем питается Ваш питомец? <br />
+            <input type="checkbox" name="food" value="Сухой корм" />Сухой корм<br />
+            <input type="checkbox" name="food" value="Влажный корм" />Влажный корм<br />
+            <input type="checkbox" name="food" value="Натуральный корм" />Натуральный корм<br />
+        </p>
+        <p>
+            Ваш питомец: <br />
+            <input type="radio" name="gender" value="Самец">Самец<br />
+            <input type="radio" name="gender" value="Самка">Самка<br />
+        </p>
+        <p>
+            <textarea rows="10" cols="25" name="comment">Ваш комментарий</textarea>
+        </p>
+        <p>
+            Прикрепите фото питомца<br />
+            <input type="file" name="photo" multiple accept="image/*,image/jpeg" />
+        </p>
+        <p>
+            <button type="submit">Сохранить</button>
+        </p>
+
+    </form>
+
+
+</body>
+
+</html>

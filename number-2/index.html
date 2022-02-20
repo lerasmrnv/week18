@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="page">
+    <form class="container" novalidate>
+        <h1 class="title">Регистрация</h1>
+        <label for="name" class="text label-text">Имя</label>
+        <input class="text input-text" type="text" placeholder="Name" name="name" id="name" required>
+
+        <label for="email" class="text label-text">Электронная почта</label>
+        <input class="text input-text" type="text" placeholder="email" name="email" id="email"
+            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required>
+
+        <label for="password" class="text label-text">Пароль</label>
+        <input type="password" class="text input-text" id="password" minlength="8" placeholder="password" required>
+
+        <label for="phone" class="text label-text">Номер телефона</label>
+        <input class="text input-text" type="tel" placeholder="+375 (xx) xxx-xx-xx" name="tel" id="tel" required>
+
+        <label for="city" class="text label-text">Город</label>
+        <input class="text input-text" type="text" placeholder="City" name="city" id="city" required>
+
+        <button class="btn text" type="button">Завершить регистрацию</button>
+        <div id="result" class="text errors-info"></div>
+    </form>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
